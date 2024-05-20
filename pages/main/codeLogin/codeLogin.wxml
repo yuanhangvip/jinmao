@@ -1,0 +1,33 @@
+<!--pages/main/codeLogin/codeLogin.wxml-->
+
+<view class="codeLoginMainView">
+
+  <!-- <view class="topView">
+    <view class="backBtn" bindtap="backBtnAction">返回</view>
+    <view class="topViewTitle">金茂物业</view>
+  </view> -->
+
+  <view class="mainTitle">验证码登录</view>
+
+  <view class="phoneView">
+    <input class="phoneField" type="number" placeholder="请输入手机号" bindinput="getPhone"/>
+  </view>
+
+  <view class="codeView">
+    <input class="codeField" type="number" placeholder="请输入验证码" bindinput="getsmsCode"/>
+    <view class="getCode" bindtap="sendSmsCode" wx:if='{{!isSendSMSCode}}'>获取验证码</view>
+    <span class="getCode" wx:else>重新发送({{captchaVal}}s)</span>
+  </view>
+  <view bindtap="onSubmit" class="login">登录</view>
+
+  <view class="agreement">
+    <view class="imgSel">
+      <image src="https://jinmaowy.oss-cn-beijing.aliyuncs.com/jinmao/mp/mine/login/read.png" alt="" class="sel_agreement" wx:if="{{showAgreement}}" bindtap="selAgreement"></image>
+      <image src="https://jinmaowy.oss-cn-beijing.aliyuncs.com/jinmao/mp/mine/login/unread.png" alt="" class="sel_agreement" wx:else bindtap="selAgreement"></image>
+    </view>
+    <span class="agreement_txt">
+      <text bindtap="selAgreement">我已阅读并同意</text>
+      <text data-type='1' class="to_agreement" bindtap="urlGoWx" >《金茂服务用户协议》</text>
+    </span>
+  </view>
+</view>

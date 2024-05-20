@@ -1,0 +1,5 @@
+<view class="page-content">
+	<view wx:if="{{webviewURL}}">
+		<web-view src="{{webviewURL}}"></web-view>
+	</view>
+</view>

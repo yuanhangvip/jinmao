@@ -1,0 +1,166 @@
+/* pages/main/login/login.wxss */
+
+.loginMainView {
+  position: fixed;
+  /* margin-top: -120rpx; */
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(227, 231, 236, 1);
+}
+
+.loginMainView .topView {
+  display: flex;
+  /* margin-top: 120rpx; */
+  width: 100vw;
+  height: 260rpx;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.loginMainView .topView .backBtn{
+  margin-left: 40rpx;
+}
+
+.loginMainView .topView .topTitle{
+  margin-left: 170rpx;
+  font-size: 34rpx;
+  width: 200rpx;
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+}
+
+.loginMainView .centerView{
+  display: flex;
+  background-color: white;
+  margin-top: 100rpx;
+  margin-left: 36rpx;
+  margin-right: 36rpx;
+  padding-bottom: 40rpx;
+  border-radius: 30rpx 30rpx 30rpx 30rpx;
+}
+
+.loginMainView  .centerView{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginMainView  .centerView .center-top{
+  padding-top: 56rpx;
+  margin-left: 30rpx;
+  width: 80vw;
+  height: 60rpx;
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 500;
+}
+
+.loginMainView  .centerView .center-center{
+  width: 500rpx;
+  margin-top: 50rpx;
+  height: 90rpx;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 90rpx;
+  font-weight: 500;
+  background-color: rgba(240, 196, 156, 1);
+  border-radius: 90rpx;
+ }
+
+ .loginMainView  .centerView .center-bottom{
+  width: 500rpx;
+  margin-top: 40rpx;
+  height: 90rpx;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 90rpx;
+  font-weight: 500;
+  background-color: rgba(240, 196, 156, 1);
+  border-radius: 90rpx;
+ }
+
+ .imgSel{
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.sel_agreement{
+  width: 15px;
+  height: 15px;
+  margin-right: 12rpx;
+  position: relative;
+  top: 4rpx;
+}
+
+.agreement_txt{
+  text-align: left;
+  color: #9C9C9C;
+}
+.to_agreement{
+  color: #333333;
+  display: inline;
+}
+
+.agreement{
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.tipBox{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mark{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-color: #000000;
+}
+
+.content{
+  width: 560rpx;
+  background-color:#ffffff ;
+  position: relative;
+  z-index: 9;
+  border-radius: 10rpx;
+  text-align: center;
+  padding-top: 40rpx;
+  font-size: 34rpx;
+}
+
+.btnTip{
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-top: 36rpx;
+  border-top: 1rpx solid #E5E5E5;
+  color: #000000;
+}
+
+.childrenBtn1{
+  border-right: 1rpx solid #E5E5E5 ;
+  font-size: 36rpx;
+  width: 279rpx;
+}
+
+.childrenBtn2{
+  width: 280rpx;
+  color: #006EFF;
+  font-size: 36rpx;
+  background-color: #ffffff;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 0;
+  flex: 1;
+  font-weight: revert;
+}

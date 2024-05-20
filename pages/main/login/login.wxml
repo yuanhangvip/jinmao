@@ -1,0 +1,40 @@
+<!--pages/main/login/login.wxml-->
+<view>
+  <view class="loginMainView">
+    <view class="topView">
+      <!-- <view class="backBtn"  bindtap="backAction"> 返回 </view>
+      <view class="topTitle">金茂物业</view> -->
+    </view>
+
+    <view class="centerView">
+      <view class="center-top">以恒心 致恒长</view>
+      <view class="center-center" bindtap="quickLogin" >一键登录</view>
+      <view class="center-bottom" bindtap="codeLogin">验证码登录</view>
+
+      <view class="agreement">
+      <view class="imgSel">
+        <image src="https://jinmaowy.oss-cn-beijing.aliyuncs.com/jinmao/mp/mine/login/read.png" alt="" class="sel_agreement" wx:if="{{showAgreement}}" bindtap="selAgreement"></image>
+        <image src="https://jinmaowy.oss-cn-beijing.aliyuncs.com/jinmao/mp/mine/login/unread.png" alt="" class="sel_agreement" wx:else bindtap="selAgreement"></image>
+      </view>
+      <span class="agreement_txt">
+        <text bindtap="selAgreement">我已阅读并同意</text>
+        <text class="to_agreement" bindtap="urlGoWx" >《金茂服务用户协议》</text>
+      </span>
+      </view>
+    </view>
+
+</view>
+<!-- 弹窗 -->
+<view class="tipBox" wx:if="{{tipShow}}">
+    <view class="mark"></view>
+    <view class="content">
+      <view class="content_txt">小程序希望获取您的的授权以便</view>
+      <view class="content_txt">注册/登入会员</view>
+      <view class="btnTip">
+        <view bindtap="cancel" class="childrenBtn childrenBtn1">取消</view>
+        <button  open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"  class="childrenBtn2">确认</button >
+      </view>
+    </view>
+</view>
+</view>
+

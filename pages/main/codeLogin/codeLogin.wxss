@@ -1,0 +1,133 @@
+/* pages/main/codeLogin/codeLogin.wxss */
+
+.codeLoginMainView {
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.codeLoginMainView .topView{
+  display: flex;
+  margin-top: 80rpx;
+  height: 100rpx;
+  width: 100vw;
+}
+
+.codeLoginMainView .topView .backBtn{
+  padding-top: 30rpx;
+  margin-left: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  color: rgba(51, 51, 51, 1);
+
+}
+
+.codeLoginMainView .topView .topViewTitle{
+  padding-top: 30rpx;
+  margin-left: 150rpx;
+  font-size: 34rpx;
+  width: 200rpx;
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+}
+
+.codeLoginMainView .mainTitle{
+  margin-left: 72rpx;
+  margin-top: 100rpx;
+  font-size: 48rpx;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 1);
+
+}
+
+.codeLoginMainView .phoneView {
+  margin-top: 58rpx;
+  margin-left: 52rpx;
+  margin-right: 52rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  width: 85vw;
+  height: 100rpx;
+  background-color: rgba(247, 248, 250, 1);
+  border-radius: 50rpx;
+  text-align: center;
+}
+
+.codeLoginMainView .codeView {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 58rpx;
+  margin-left: 52rpx;
+  margin-right: 52rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  width: 85vw;
+  height: 100rpx;
+  background-color: rgba(247, 248, 250, 1);
+  border-radius: 50rpx;
+  text-align: center;
+}
+
+.codeLoginMainView .phoneView .phoneField{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 80vw;
+  height: 100rpx;
+  text-align: left;
+}
+
+.codeLoginMainView .codeView .codeField{
+  margin-left: 20rpx;
+  width: 200rpx;
+  height: 100rpx;
+  text-align: left;
+}
+
+.codeLoginMainView .codeView .getCode{
+  margin-top: 30rpx;
+  width: 200rpx;
+  height: 100rpx;
+  text-align: center;
+  color:rgba(200, 115, 55, 1);
+}
+.login {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin: 68rpx 40rpx 0rpx;
+  background: linear-gradient(163deg, #F8D6B4 0%, #F4BB87 100%);
+  border-radius: 118rpx;
+  color: #353740;
+  font-weight: 600;
+}
+
+.imgSel{
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.sel_agreement{
+  width: 15px;
+  height: 15px;
+  margin-right: 12rpx;
+  position: relative;
+  top: 4rpx;
+}
+
+.agreement_txt{
+  text-align: left;
+  color: #9C9C9C;
+}
+.to_agreement{
+  color: #333333;
+  display: inline;
+}
+
+.agreement{
+  margin:40rpx 30rpx 40rpx;
+  display: flex;
+  justify-content: center;
+}

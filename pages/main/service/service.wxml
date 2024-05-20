@@ -1,0 +1,31 @@
+<view style="width: 100%;">
+  <view style="padding-top:{{bar_Height}}px;" class="top_title">
+    服务
+  </view>
+  <view class="card">
+    <view class="serverTitle">常用服务</view>
+    <van-grid column-num="4" gutter="{{ 10 }}">
+      <van-grid-item use-slot bind:click="clickFun" data-item="{{item}}" wx:for="{{ listData }}" wx:key="id">
+        <view class="serverItem">
+          <image class="menuImg" src="../../../assets/images/home_select.png" mode="cover"></image>
+          <view class="text">{{item.name}}</view>
+        </view>
+
+      </van-grid-item>
+    </van-grid>
+  </view>
+  <view class="card">
+    <view class="serverTitle">常用服务</view>
+    <van-grid column-num="4" gutter="{{ 10 }}">
+      <van-grid-item use-slot bind:click="clickFun" data-item="{{item}}" wx:for="{{ otherServer }}" wx:key="id">
+        <view class="serverItem">
+          <image class="menuImg" src="../../../assets/images/home_select.png" mode="cover"></image>
+          <view class="text">{{item.name}}</view>
+        </view>
+
+      </van-grid-item>
+    </van-grid>
+  </view>
+  <van-toast id="van-toast" />
+  <van-dialog id="myDialog" />
+</view>

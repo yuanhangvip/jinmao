@@ -1,0 +1,130 @@
+/* pages/main/mine/mine.wxss */
+.mainView {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://jinmaowy.oss-cn-beijing.aliyuncs.com/jinmao/prod/shop/20231220/200cb48dc1504ae5a67fdea8a5b21d80.png");
+  width: 100%;
+  height: 454rpx;
+  flex-direction: column;
+}
+
+.mainView .topView {
+  width: 100vw;
+  height: 60rrpx;
+  margin-top: 100rpx;
+  text-align: center;
+  color: rgba(51, 51, 51, 1);
+  font-size: 40rpx;
+}
+
+.mainView .subView {
+  margin-top: 40rpx;
+  margin-left: 42rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mainView .subView .leftUserIconView {
+  width: 108rpx;
+  height: 108rpx;
+}
+
+.mainView .subView .userName {
+  margin-left: 26rpx;
+  font-size: 40rpx;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainView .subView .userName .topName {
+  font-size: 32rpx;
+}
+
+.mainView .subView .userName .topName .authentication {
+  color: #f1bd68;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  display: inline-flex;
+  width: 110rpx;
+  background: #F3E3D9;
+  padding: 5rpx 20rpx;
+  border-radius: 20rpx;
+}
+
+.mainView .subView .userName .phone {
+  font-weight: 100;
+  font-size: 28rpx;
+}
+
+.mainView .payment {
+  width: 95vw;
+  line-height: 90rpx;
+  margin: 20rpx;
+  /* height: 60rpx; */
+  color: rgba(51, 51, 51, 1);
+  font-size: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainView .payment .payWrap {
+  width: 50%;
+  background: #fff;
+  padding: 20rpx 20rpx;
+  border-radius: 20rpx;
+  margin: 0 10rpx;
+  display: flex;
+  justify-content: start;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+.mainView .payment .payWrap .icon {
+  font-size: 50rpx;
+  margin-right: 10rpx;
+}
+
+
+.mainView .itemContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 30rpx;
+  width: 88vw;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 16rpx;
+}
+
+.mainView .itemContent .item {
+  display: flex;
+  align-items: center;
+}
+
+.mainView .itemContent .item .icon {
+  font-size: 50rpx;
+}
+
+.mainView .logOff {
+  width: 100vw;
+  text-align: center;
+  margin-top: 35%;
+}
+
+.mainView .logOff .btn {
+  display: inline-block;
+  border: 1rpx solid #e9b370;
+  padding: 10rpx 40rpx;
+  border-radius: 30rpx;
+  color: #e9b370;
+}

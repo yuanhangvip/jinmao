@@ -1,0 +1,80 @@
+<view style="width: 100%;">
+  <!-- <view style="padding-top:{{bar_Height}}px; line-height: 44px;text-align: center;font-size: 34rpx;position: fixed;top: 0px;left: 50%;transform: translateX(-50%);z-index: 999;width: 100%;height: 44px;background: #fff;" class="top_title">首页</view> -->
+  <view>
+    <view class="home">
+      <image src="https://jinmaowy.oss-cn-beijing.aliyuncs.com/jinmao/prod/shop/20231220/14a1446f7eb74f4c8dc6745ccade1cc5.png" mode="widthFix"></image>
+      <van-dropdown-menu wx:if="{{selectShow}}" class="imageText" style="top:{{bar_Height}}px" active-color="#000">
+        <van-dropdown-item value="{{ value }}" options="{{ option }}" />
+      </van-dropdown-menu>
+      <!-- <view class="homeContainer">
+        <navigator url="/pages/main/service/service" open-type="switchTab" hover-class="none">
+          <view class="noticeContainer">
+            <view class="title fontWeight">物业通知</view>
+            <view class="subtitle">社区防诈骗宣传的通知</view>
+            <image class="imageClass" src="https://files.axshare.com/gsc/ZFFV48/7c/53/fd/7c53fd3bcf7a4ddcbbe87c26e2edcd34/images/1_首页/u36.svg?pageId=242d3464-aa08-44d4-a735-78201730ba68" mode="aspectFit"></image>
+          </view>
+        </navigator>
+      </view> -->
+      <view>
+        <view class="contentContainer">
+          <view class="services">常用服务</view>
+          <van-grid column-num="2" center="{{false}}">
+            <!-- <van-grid-item use-slot icon="photo-o" wx:for="{{ list }}" wx:key="id">
+              <view class="domainContainer">
+                <view class="domainLeft">
+                  <view class="fontWeight lightBlackColor">{{item.title}}</view>
+                  <view class="fontSize14 colorGray">{{item.text}}</view>
+                </view>
+                <view class="iconSucess">
+                  <van-icon name="fire-o" color="#ee0a24" />
+                </view>
+              </view>
+            </van-grid-item> -->
+            <view wx:if="{{listData.length > 0}}">
+              <van-grid-item use-slot wx:for="{{list}}" wx:key="id">
+                <view class="domainContainer">
+                  <van-icon name="fire-o" color="#ee0a24" />
+                  <view class="domainContainerItem">
+                    <view class="domainItemOne">{{item.title}}</view>
+                    <view style="color: gray;">{{item.text}}</view>
+                  </view>
+                </view>
+              </van-grid-item>
+            </view>
+            <view wx:else>
+              <van-grid-item use-slot wx:for="{{list}}" wx:key="id">
+                <view>图片</view>
+                <view class="blackColor weightClass" style="padding: 10rpx 0;">{{item.title}}</view>
+                <view class="grayColor fontSize27">{{item.text}}</view>
+              </van-grid-item>
+            </view>
+          </van-grid>
+        </view>
+        <view class="itemContent" bindtap="PrivacyAgreement">
+          <view class="item">
+            <van-icon name="smile-o" class="icon" />
+            <text class="bottom-border itemName2">预防社区咋骗，发布社区防咋骗宣传通知</text>
+          </view>
+          <van-icon name="arrow" />
+        </view>
+        <view class="activityTitle">
+          <view class="fontWeight lightBlackColor">社区活动</view>
+          <view class="fontSize14 colorGray">更多活动</view>
+        </view>
+        <view class="communityActivitiesContainer">
+          <view class="communityActivitieDetails" wx:for="{{listData}}" wx:key="id">
+            <view>
+              <image class="imageDetails" src="https://jinmaowy.oss-cn-beijing.aliyuncs.com/jinmao/prod/shop/20231220/14a1446f7eb74f4c8dc6745ccade1cc5.png" mode="widthFix"></image>
+            </view>
+            <view>
+              <view class="detailsText">{{item.name}}</view>
+              <view class="marginLeft10 marginTop10 colorGray">报名人数 {{item.num}}人</view>
+            </view>
+          </view>
+          <view wx:if="{{!hasMoreData}}" class="no-more-data">已经到底啦~</view>
+          <view wx:else class="loading-more">加载中...</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,217 @@
+.weightClass {
+  font-weight: bold;
+}
+
+.fontSize27 {
+  font-size: 27rpx;
+}
+
+.lightBlackColor {
+  color: #333333
+}
+
+.fontWeight {
+  font-weight: bold;
+}
+
+.fontSize14 {
+  font-size: 14px;
+}
+
+.colorGray {
+  color: gray;
+}
+
+.marginLeft10 {
+  margin-left: 10%;
+}
+
+.marginTop10 {
+  margin-top: 10px;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.homeContainer {
+  background-color: pink;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.van-dropdown-menu {
+  background-color: unset !important;
+  box-shadow: 0 0 black !important;
+}
+
+.imageText {
+  /* margin-top: -365rpx; */
+  position: fixed;
+  /* top: 60rpx; */
+  left: 40rpx;
+  color: rgba(51, 51, 51, 1);
+  font-size: 48rpx;
+  line-height: 44px;
+  font-weight: 700;
+  z-index: 999;
+}
+
+.noticeContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  line-height: 20px;
+  color: #B8741A;
+}
+
+.imageClass {
+  height: 10px;
+  width: 20px;
+  margin-top: 15px;
+}
+
+.subtitle {
+  color: #555555;
+  line-height: 40px;
+  padding-right: 30%;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.activity {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* .domainContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+} */
+.domainContainer {
+  display: flex;
+}
+
+.domainContainerItem {
+  margin-left: 30rpx;
+}
+
+.domainItemOne {
+  font-weight: bold;
+  padding-bottom: 10rpx;
+}
+
+.iconSucess {
+  padding-left: 40px;
+}
+
+.textContainer {
+  padding: 10px;
+  width: calc(50% - 20px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconSucess {
+  margin-top: 5%;
+}
+
+.activityTitle {
+  background-color: rgba(248, 248, 248, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.imageDetails {
+  width: 110px;
+}
+
+.communityActivitieDetails {
+  height: 60px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.no-more-data,
+.loading-more {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* 根据需要自定义加载更多的样式 */
+.loading-more {
+  color: #666;
+}
+
+.detailsText {
+  margin-left: 10%;
+  overflow: hidden;
+  display: -webkit-box;
+  /* 作为弹性伸缩盒子模型显示 */
+  -webkit-line-clamp: 2;
+  /* 限制在2行 */
+  -webkit-box-orient: vertical;
+  /* 垂直排列盒子 */
+  text-overflow: ellipsis;
+  /* 使用省略号表示文本溢出 */
+}
+
+.contentContainer {
+  width: 90vw;
+  padding: 0 20rpx;
+  margin-top: -100rpx;
+  margin-left: 16.5rpx;
+  border-radius: 25rpx 25rpx 25rpx 25rpx;
+  background-color: white;
+}
+
+.services {
+  padding-top: 30rpx;
+  margin-left: 20rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.itemContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 20rpx;
+  width: 90vw;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 16rpx;
+  font-size: 28rpx;
+}
+
+.itemContent .item {
+  display: flex;
+  align-items: center;
+}
+
+.itemContent .item .icon {
+  font-size: 50rpx;
+}
