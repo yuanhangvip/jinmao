@@ -43,18 +43,29 @@
 }
 
 .mainView .subView .userName .topName {
+  display: inline-flex;
+  align-items: center;
+  height: 40rpx;
   font-size: 32rpx;
 }
 
 .mainView .subView .userName .topName .authentication {
-  color: #f1bd68;
+  width: 130rpx;
+  height: 40rpx;
+  /* color: #f1bd68;
   margin-left: 20rpx;
   font-size: 26rpx;
   display: inline-flex;
   width: 110rpx;
   background: #F3E3D9;
   padding: 5rpx 20rpx;
-  border-radius: 20rpx;
+  border-radius: 20rpx; */
+}
+
+.mainView .subView .userName .topName .authentication .leftUserIconView1 {
+  margin-left: 20rpx;
+  width: 130rpx;
+  height: 30rpx;
 }
 
 .mainView .subView .userName .phone {
@@ -63,7 +74,7 @@
 }
 
 .mainView .payment {
-  width: 95vw;
+  width: 710rpx;
   line-height: 90rpx;
   margin: 20rpx;
   /* height: 60rpx; */
@@ -71,24 +82,45 @@
   font-size: 40rpx;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .mainView .payment .payWrap {
-  width: 50%;
+  width: 33%;
+  height: 120rpx;
   background: #fff;
   padding: 20rpx 20rpx;
   border-radius: 20rpx;
   margin: 0 10rpx;
   display: flex;
-  justify-content: start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 32rpx;
   font-weight: 500;
 }
 
+.label_5 {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.text_5 {
+  overflow-wrap: break-word;
+  color: rgb(12, 11, 11);
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 32rpx;
+  margin-top: 6rpx;
+}
+
 .mainView .payment .payWrap .icon {
   font-size: 50rpx;
-  margin-right: 10rpx;
+  margin-right: 15rpx;
+  font-weight: bold;
 }
 
 
@@ -123,8 +155,9 @@
 
 .mainView .logOff .btn {
   display: inline-block;
-  border: 1rpx solid #e9b370;
-  padding: 10rpx 40rpx;
-  border-radius: 30rpx;
-  color: #e9b370;
+  border: 1rpx solid #0e0e0e;
+  padding: 15rpx 50rpx;
+  border-radius: 10rpx;
+  color: #0e0e0e;
 }
+

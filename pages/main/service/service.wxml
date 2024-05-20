@@ -1,31 +1,79 @@
-<view style="width: 100%;">
+<view class="page">
   <view style="padding-top:{{bar_Height}}px;" class="top_title">
     服务
   </view>
-  <view class="card">
-    <view class="serverTitle">常用服务</view>
-    <van-grid column-num="4" gutter="{{ 10 }}">
-      <van-grid-item use-slot bind:click="clickFun" data-item="{{item}}" wx:for="{{ listData }}" wx:key="id">
-        <view class="serverItem">
-          <image class="menuImg" src="../../../assets/images/home_select.png" mode="cover"></image>
-          <view class="text">{{item.name}}</view>
+  <view class="section_1">
+    <view class="block_3">
+      <view class="image-wrapper_1">
+        <image src="../../../assets/images/canyongfuwu.png" class="image_3"></image>
+      </view>
+      <view class="block_4">
+        <view class="image-text_1" bindtap='PropertyManagementPayment'>
+          <view class="image-wrapper_2">
+            <image src="../../../assets/images/wuguanjiaofei.png" class="label_1"></image>
+          </view>
+          <view class="text-group_1">
+            <text lines="1" class="text_4">物管缴费</text>
+            <text lines="1" class="text_5">在线缴费更省心</text>
+          </view>
         </view>
-
-      </van-grid-item>
-    </van-grid>
-  </view>
-  <view class="card">
-    <view class="serverTitle">常用服务</view>
-    <van-grid column-num="4" gutter="{{ 10 }}">
-      <van-grid-item use-slot bind:click="clickFun" data-item="{{item}}" wx:for="{{ otherServer }}" wx:key="id">
-        <view class="serverItem">
-          <image class="menuImg" src="../../../assets/images/home_select.png" mode="cover"></image>
-          <view class="text">{{item.name}}</view>
+        <view class="image-text_2" bindtap='RepairMatters'>
+          <view class="image-wrapper_3">
+            <image src="../../../assets/images/baoxiu.png" class="label_2"></image>
+          </view>
+          <view class="text-group_2">
+            <text lines="1" class="text_6">报修事宜</text>
+            <text lines="1" class="text_7">线上报单超方便</text>
+          </view>
         </view>
-
-      </van-grid-item>
-    </van-grid>
+      </view>
+      <view class="block_5">
+        <view class="image-text_3" bindtap='ParkingPayment'>
+          <image src="../../../assets/images/tingchejiaofei.png" class="label_3"></image>
+          <view class="text-group_3">
+            <text lines="1" class="text_8">停车缴费</text>
+            <text lines="1" class="text_9">在线缴费更省心</text>
+          </view>
+        </view>
+        <view class="image-text_4" bindtap='MemberCenter'>
+          <image src="../../../assets/images/huiyuanzhongxin.png" class="label_4"></image>
+          <view class="text-group_4">
+            <text lines="1" class="text_10">会员中心</text>
+            <text lines="1" class="text_11">享更多会员福利</text>
+          </view>
+        </view>
+      </view>
+    </view>
   </view>
-  <van-toast id="van-toast" />
-  <van-dialog id="myDialog" />
+  <view class="section_2">
+    <view class="group_1">
+      <view class="group_2">
+        <image src="../../../assets/images/qitafuwu.png" class="image_3"></image>
+      </view>
+      <view class="image-wrapper_4">
+        <view class="block_6">
+          <view class="text-group_2" bindtap='CommunityActive'>
+            <image src="../../../assets/images/shequhuodong.png" class="label_5"></image>
+            <text lines="1" class="text_5">社区活动</text>
+          </view>
+          <view class="text-group_2" bindtap='CommunityAnnouncement'>
+            <image src="../../../assets/images/shequgonggao.png" class="label_5"></image>
+            <text lines="1" class="text_7">社区公告</text>
+          </view>
+          <view class="text-group_2" bindtap='ProjectYellowPages'>
+            <image src="../../../assets/images/xiangmuhuangye.png" class="label_5"></image>
+            <text lines="1" class="text_7">项目黄页</text>
+          </view>
+          <view class="text-group_2" bindtap='Questionnaire'>
+            <image src="../../../assets/images/diaochawenjuan.png" class="label_5"></image>
+            <text lines="1" class="text_7">调查问卷</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class="bottomWrap">
+    <image class="bottom" src="/assets/images/btmlogo@3x.png" alt=""></image>
+  </view>
 </view>

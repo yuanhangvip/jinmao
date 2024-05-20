@@ -1,6 +1,4 @@
 // pages/main/service/service.js
-import Toast from '@vant/weapp/toast/toast';
-import Dialog from '@vant/weapp/dialog/dialog';
 Page({
 
   /**
@@ -8,41 +6,6 @@ Page({
    */
   data: {
     bar_Height: wx.getSystemInfoSync().statusBarHeight,
-    listData: [{
-        id: 1,
-        name: '物管缴费'
-      },
-      {
-        id: 2,
-        name: '报事报修'
-      },
-      {
-        id: 3,
-        name: '社区活动'
-      },
-      {
-        id: 4,
-        name: '物业通知'
-      },
-    ],
-    otherServer: [{
-        id: 1,
-        name: '物管缴费'
-      },
-      {
-        id: 2,
-        name: '报事报修'
-      },
-      {
-        id: 3,
-        name: '社区活动'
-      },
-      {
-        id: 4,
-        name: '物业通知'
-      },
-    ],
-
   },
 
   /**
@@ -51,7 +14,70 @@ Page({
   onLoad(options) {
 
   },
-
+  // 物管缴费
+  PropertyManagementPayment() {
+    wx.showToast({
+      title: '开发中,敬请期待 . . . ',
+      icon: 'none',
+      duration: 2000
+    })
+  },
+  // 报修事宜
+  RepairMatters() {
+    wx.showToast({
+      title: '开发中,敬请期待 . . . ',
+      icon: 'none',
+      duration: 2000
+    })
+  },
+  // 停车缴费
+  ParkingPayment() {
+    wx.showToast({
+      title: '开发中,敬请期待 . . . ',
+      icon: 'none',
+      duration: 2000
+    })
+  },
+  // 会员中心
+  MemberCenter() {
+    wx.showToast({
+      title: '开发中,敬请期待 . . . ',
+      icon: 'none',
+      duration: 2000
+    })
+  },
+  // 社区活动
+  CommunityActive() {
+    wx.showToast({
+      title: '开发中,敬请期待 . . . ',
+      icon: 'none',
+      duration: 2000
+    })
+  },
+  // 社区公告
+  CommunityAnnouncement() {
+    wx.showToast({
+      title: '开发中,敬请期待 . . . ',
+      icon: 'none',
+      duration: 2000
+    })
+  },
+  // 项目黄页
+  ProjectYellowPages() {
+    wx.showToast({
+      title: '开发中,敬请期待 . . . ',
+      icon: 'none',
+      duration: 2000
+    })
+  },
+  // 调查问卷
+  Questionnaire() {
+    wx.showToast({
+      title: '开发中,敬请期待 . . . ',
+      icon: 'none',
+      duration: 2000
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -99,22 +125,5 @@ Page({
    */
   onShareAppMessage() {
 
-  },
-  clickFun(e) {
-    console.log(e.target.dataset);
-    if (e.target.dataset.item.id !== 1) {
-      Toast('当前业务正在开发中');
-    } else {
-      console.log('123');
-      Dialog.alert({
-        context: this,
-        selector: '#myDialog',
-        message: '请先登录小程序',
-        confirmButtonText: '去登录',
-        color: 'pink'
-      }).then(() => {
-        // on close
-      });
-    }
   }
 })

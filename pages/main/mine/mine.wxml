@@ -1,45 +1,52 @@
 <!--pages/main/mine/mine.wxml-->
 <view style="height: 100%; background-color: #F5F5F5; position: fixed; width: 100%;">
   <view class="mainView">
-    <view style="padding-top:{{bar_Height}}px; line-height: 44px;text-align: center;font-size: 34rpx;" class="top_title">我的</view>
+    <view style="padding-top:{{bar_Height}}px;margin-left: 30rpx; line-height: 44px;text-align: left;font-size: 34rpx;" class="top_title">我的</view>
     <view class="subView" bindtap="loginAction">
       <image class="leftUserIconView" src="/assets/images/user_icon.png" alt=""></image>
       <view class="userName">
         <view class="topName">
-          <text>郑旖旎</text>
-          <view class="authentication">未认证
-            <van-icon name="arrow" />
+          <text>李欧</text>
+          <view class="authentication">
+            <image class="leftUserIconView1" src="/assets/images/weirenzheng.png" alt=""></image>
           </view>
         </view>
         <view class="phone">{{ phone }}</view>
       </view>
     </view>
     <view class="payment">
-      <view class="payWrap">
-        <van-icon name="balance-list-o" class="icon" />
-        <text>缴费记录</text>
+      <view class="payWrap" bindtap='PaymentRecords'>
+        <image src="../../../assets/images/baoxiu.png" class="label_5"></image>
+        <text lines="1" class="text_5">缴费记录</text>
       </view>
-      <view class="payWrap">
-        <van-icon name="bill-o" class="icon" />
-        <text>我的资产</text>
+      <view class="payWrap" bindtap='RepairRecord'>
+        <image src="../../../assets/images/shequhuodong.png" class="label_5"></image>
+        <text lines="1" class="text_5">报修记录</text>
+      </view>
+      <view class="payWrap" bindtap='MyAssets'>
+        <image src="../../../assets/images/shequgonggao.png" class="label_5"></image>
+        <text lines="1" class="text_5">我的资产</text>
       </view>
     </view>
     <view class="itemContent" bindtap="urlGoWx">
       <view class="item">
-        <van-icon name="records-o" class="icon" />
+        <van-icon name="notes-o" class="icon" />
         <text class="bottom-border itemName2">用户服务协议</text>
       </view>
       <van-icon name="arrow" />
     </view>
     <view class="itemContent" bindtap="PrivacyAgreement">
       <view class="item">
-        <van-icon name="smile-o" class="icon" />
+        <van-icon name="bag-o" class="icon" />
         <text class="bottom-border itemName2">用户隐私协议</text>
       </view>
       <van-icon name="arrow" />
     </view>
     <view class="logOff">
       <view class="btn">退出账号 </view>
+    </view>
+    <view class="bottomWrap">
+      <image class="bottom" src="/assets/images/btmlogo@3x.png" alt=""></image>
     </view>
   </view>
 </view>

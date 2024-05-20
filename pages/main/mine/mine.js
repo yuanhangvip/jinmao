@@ -15,7 +15,31 @@ Page({
   onLoad(options) {
 
   },
-
+  // 缴费记录
+  PaymentRecords() {
+    console.log(222)
+    wx.showToast({
+      title: '开发中,敬请期待 . . . ',
+      icon: 'none',
+      duration: 2000
+    })
+  },
+  // 报修记录
+  RepairRecord() {
+    wx.showToast({
+      title: '开发中,敬请期待 . . . ',
+      icon: 'none',
+      duration: 2000
+    })
+  },
+  // 我的资产
+  MyAssets() {
+    wx.showToast({
+      title: '开发中,敬请期待 . . . ',
+      icon: 'none',
+      duration: 2000
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
